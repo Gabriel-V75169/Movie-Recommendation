@@ -39,4 +39,7 @@
     border-bottom: 1px solid #ddd;
     border-radius: 5px 5px 0 0;
   }
-  
+
+  .movie {
+    font-family: 'Crimson Text', serif;
+}
