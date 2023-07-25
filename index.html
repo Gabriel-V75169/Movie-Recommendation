@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Movie Recommendation</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
-  </head>
-  
-  <body>
-    
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommender</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css" />
+</head>
+<body>
+  <h1>Movie Recommender</h1>
+    <!-- Add a new input field for the user to enter a movie title -->
+    <label for="movieTitle">Enter a Movie Title to find similar movies:</label>
+    <input type="text" id="movieTitle" name="movieTitle" placeholder="Enter a movie title...">
+
+    <button type="submit">Find Movies</button>
+  </form>
+
+  <!-- Display the results here -->
+  <div id="results">
+    <!-- The movie recommendations will be displayed here -->
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Your JavaScript code to handle form submission and API calls will go here -->
+  <script src="assets/script.js"></script>
+</body>
+</html>
