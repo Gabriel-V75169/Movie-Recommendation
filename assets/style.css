@@ -90,9 +90,13 @@
     border-radius: 5px 5px 0 0;
   }
 
-.movie {
+.movies {
     font-family: 'Crimson Text', serif;
     color: #c21807;
+}
+
+.movies h2 {
+  border-bottom: #c21807;
 }
 
 .intro-background {
@@ -104,7 +108,13 @@
 }
 
 .container-1{
+  
+}
+
+.container-2{
   background-color: #1a1a1a;
 }
 
-#c21807
+.trending {
+
+}
