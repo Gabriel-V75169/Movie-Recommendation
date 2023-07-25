@@ -1,3 +1,9 @@
+:root {
+  --coolRed: #c21807;
+  --darkColor: #1a1a1a;
+  --lightColor: #252525;
+}
+
 
 .movie-container {
     display: flex; /* Use flexbox to create a horizontal layout */
@@ -41,9 +47,7 @@
     border-radius: 5px 5px 0 0;
   }
 
-  .movie {
-    font-family: 'Crimson Text', serif;
-}
+
 .movie-container {
     display: flex; /* Use flexbox to create a horizontal layout */
     flex-wrap: wrap; /* Allow wrapping of movie cards to the next row if needed */
@@ -88,4 +92,19 @@
 
 .movie {
     font-family: 'Crimson Text', serif;
+    color: #c21807;
 }
+
+.intro-background {
+  background-color: #252525;
+}
+
+.header {
+  background-color: #1a1a1a;
+}
+
+.container-1{
+  background-color: #1a1a1a;
+}
+
+#c21807
