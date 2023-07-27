@@ -4,8 +4,9 @@
 
 :page_with_curl:
 
-- User Story
-- Description
+*Main questions for project we need to answer*
+- User Story?
+- Description?
 - Motivation for development?
 
 ## Table of Contents
@@ -38,6 +39,7 @@
 
 ## Process
 
+*Need to answer process questions*
 - Technologies used
 - Breakdown of tasks and roles
 - Challenges
@@ -60,6 +62,8 @@
 :name_badge:
 
 Here are the following links to help us write the code:
+
+*Need to insert Everything We Worked On*
 
 ### School Links We Were Provided With
 
