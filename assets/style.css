@@ -95,9 +95,10 @@
     color: #c21807;
 }
 
-h2.movies {
-  border-bottom: #c21807;
-
+.searchTitles {
+  border-color: transparent;
+  border-bottom-color: var(--coolRed);
+  border-width: 8px;
 }
 
 .intro-background {
@@ -108,14 +109,33 @@ h2.movies {
   background-color: #1a1a1a;
 }
 
-.container-1{
+.genreContainer, .recoContainer{
+  flex: 0 0 85%;
   
 }
 
-.container-2{
-  background-color: #1a1a1a;
+.trendingFlex {
+  flex: 0 0 30%;
 }
 
-.trending {
+.trending{
+  
+  border-color: transparent;
+  border-left-color: var(--coolRed);
+  border-width: 8px;
+  position: fixed;
+  right: 0
+}
 
+.trending img {
+  max-width: 100px !important;  
+  height: 100px !important; 
+  ;
+}
+.bigContainer {
+  flex: 0 0 70%;
+}
+
+section {
+  display:flex;
 }
