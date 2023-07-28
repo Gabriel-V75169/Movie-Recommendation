@@ -43,6 +43,4 @@ function showMovies(data) {
     })
 }
 
-window.location.href = '../';
-
     
