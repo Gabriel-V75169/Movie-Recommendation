@@ -4,39 +4,129 @@
     <title>Movie Recommendation</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://icons8.com/icon/97192/popcorn"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  
+
   <body class="bg-black">
-
     <header class="header">
+      <section class="navigation"></section>
 
-        <section class="navigation"> 
-
-        </section>
-
-        <section class="movie text-[65px] flex flex-wrap justify-center items-center" >
-            <h1 class="text-center">MOVIES </h1>
-            <img class="h-full " width="60" height="60" src="https://img.icons8.com/color/48/popcorn.png" alt="popcorn"/>
-        </section>
-
+      <section
+        class="movie text-white text-[65px] flex flex-wrap justify-center items-center"
+      >
+        <h1 class="text-center">MOVIES</h1>
+        <img
+          class="h-full"
+          width="60"
+          height="60"
+          src="https://img.icons8.com/color/48/popcorn.png"
+          alt="popcorn"
+        />
+      </section>
     </header>
 
-        <div>
-            <section class="side-bar"></section>
-        </div>
+    <div>
+      <section class="side-bar"></section>
+    </div>
 
-        <div>
-            <section class="user-input">
-                <button> </button>
-            </section>
-        </div>
+    <div>
+      <section class="user-input">
+        <button></button>
+      </section>
+    </div>
 
-    <script src="./assets/script.js"></script>
+    <section class="genre-btns">
+      <div>
+        <button id="action" class="btn">Action</button>
+      </div>
 
+      <div>
+        <button id="adventure" class="btn">Adventure</button>
+      </div>
+
+      <div>
+        <button id="animation" class="btn">Animation</button>
+      </div>
+
+      <div>
+        <button id="biography" class="btn">Biography</button>
+      </div>
+
+      <div>
+        <button id="comedy" class="btn">Comedy</button>
+      </div>
+
+      <div>
+        <button id="crime" class="btn">Crime</button>
+      </div>
+
+      <div>
+        <button id="documentary" class="btn">Documentary</button>
+      </div>
+
+      <div>
+        <button id="drama" class="btn">Drama</button>
+      </div>
+
+      <div>
+        <button id="family" class="btn">Family</button>
+      </div>
+
+      <div>
+        <button id="fantasy" class="btn">Fantasy</button>
+      </div>
+
+      <div>
+        <button id="history" class="btn">History</button>
+      </div>
+
+      <div>
+        <button id="horror" class="btn">Horror</button>
+      </div>
+
+      <div>
+        <button id="musical" class="btn">Musical</button>
+      </div>
+
+      <div>
+        <button id="mystery" class="btn">Mystery</button>
+      </div>
+
+      <div>
+        <button id="romance" class="btn">Romance</button>
+      </div>
+
+      <div>
+        <button id="scifi" class="btn">Science Fiction</button>
+      </div>
+
+      <div>
+        <button id="sports" class="btn">Sports</button>
+      </div>
+
+      <div>
+        <button id="thriller" class="btn">Thriller</button>
+      </div>
+
+      <div>
+        <button id="western" class="btn">Western</button>
+      </div>
+    </section>
+
+    <div id="genre-results">
+      <!-- results go here -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="../assets/script.js"></script>
   </body>
+</html>

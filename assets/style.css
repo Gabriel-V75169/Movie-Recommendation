@@ -136,6 +136,29 @@
   flex: 0 0 70%;
 }
 
+
+}
+
+.genre-btns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+}
+
+.btn {
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.651);
+  color: red;
+  font-weight: bold;
+  font-size: 25px;
+  margin: 10px;
+  margin-left: 300px;
+  border: 2px;
+  border-color: darkred;
+  cursor: pointer;
+  padding: 3px 5px 3px 5px;
+}
+
 section {
   display:flex;
 }
