@@ -104,52 +104,61 @@ const historyBtn = $("#history");
 const horrorBtn = $("#horror");
 const musicalBtn = $("#musical");
 const mysteryBtn = $("#mystery");
-const romanceBtn = document.getElementById('romance');
+const romanceBtn = document.getElementById("romance");
 const scifiBtn = $("#scifi");
 const sportsBtn = $("#sports");
 const thrillerBtn = $("#thriller");
 const westernBtn = $("#western");
 
+// Get the genre buttons
+const genreButtons = document.querySelectorAll(".btn");
 
-romanceBtn.addEventListener('click', searchRomanceMovies);
+// Add event listeners to the genre buttons
+genreButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const genre = button.dataset.genre;
+    searchGenre(genre);
+  });
+});
 
 // Function to search for romance movies
-function searchRomanceMovies() {
-  const genreKey = 'a005c14e69msh0a4e62b61b8ee65p1f3f21jsn12df62b5ea9c';
+function searchGenre(genre) {
+  const genreKey = "a005c14e69msh0a4e62b61b8ee65p1f3f21jsn12df62b5ea9c";
 
-  const apiUrl = `https://streaming-availability.p.rapidapi.com/v2/search/basic?country=us&services=netflix%2Cprime.buy%2Chulu.addon.hbo%2Cpeacock.free&output_language=en&show_type=movie&genre=10749&show_original_language=en&keyword=zombie`;
+  const genreUrl = `https://streaming-availability.p.rapidapi.com/v2/search/basic?country=us&services=netflix%2Cprime.buy%2Chulu.addon.hbo%2Cpeacock.free&output_language=en&show_type=movie&genre=${genre}&show_original_language=en`;
 
-  fetch(apiUrl, {
-    method: 'GET',
+  fetch(genreUrl, {
+    method: "GET",
     headers: {
-      'X-RapidAPI-Key': genreKey,
-      'X-RapidAPI-Host': 'streaming-availability.p.rapidapi.com'
-    }
+      "X-RapidAPI-Key": genreKey,
+      "X-RapidAPI-Host": "streaming-availability.p.rapidapi.com",
+    },
   })
-  .then(response => response.json())
-  .then(data => {
-    // Handle the API response
-    const moviesContainer = document.getElementById('genre-results');
-    moviesContainer.innerHTML = '';
+    .then((response) => response.json())
+    .then((data) => {
+      // Handle the API response
+      const moviesContainer = document.getElementById("genre-results");
+      moviesContainer.innerHTML = "";
 
-    data.result.forEach(movie => {
-      const movieElement = document.createElement('div');
-      movieElement.classList.add('movie');
+      data.result.forEach((movie) => {
+        const movieEl = document.createElement("div");
+        movieEl.classList.add("movie");
 
-      const titleElement = document.createElement('h3');
-      titleElement.textContent = movie.title;
-      movieElement.appendChild(titleElement);
+        const titleEl = document.createElement("h3");
+        titleEl.textContent = movie.title;
+        movieEl.appendChild(titleEl);
 
-      const posterElement = document.createElement('img');
-      posterElement.src = movie.posterURLs['185']; // Adjust the size as per your preference
-      posterElement.alt = movie.title;
-      movieElement.appendChild(posterElement);
+        // Grabbing the posters and appending them to the result
+        const posterEl = document.createElement("img");
+        posterEl.src = movie.posterURLs["185"]; // 185 sets the size of the poster
+        posterEl.alt = movie.title;
+        movieEl.appendChild(posterEl);
 
-      moviesContainer.appendChild(movieElement);
+        moviesContainer.appendChild(movieEl);
+      });
+    })
+    .catch((error) => {
+      // Log any errors
+      console.error(error);
     });
-  })
-  .catch(error => {
-    // Handle any errors
-    console.error(error);
-  });
 }
