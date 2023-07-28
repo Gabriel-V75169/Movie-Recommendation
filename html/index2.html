@@ -15,14 +15,14 @@
     />
   </head>
 
-  <body class="bg-black">
+  <body class="intro-background">
     <header class="header">
       <section class="navigation"></section>
 
       <section
         class="movie text-white text-[65px] flex flex-wrap justify-center items-center"
       >
-        <h1 class="text-center">MOVIES</h1>
+        <h1 class="movies text-[65px] flex  justify-center items-center">MOVIES</h1>
         <img
           class="h-full"
           width="60"
@@ -33,8 +33,8 @@
       </section>
     </header>
 
-    <div>
-      <section class="side-bar"></section>
+    <div class="genreContainer inline mr-20">
+      <h1 class="searchTitles movies text-3xl text-center pb-3 mb-3 border-double rounded-md">Select Your Genre</h1>
     </div>
 
     <div>
@@ -45,86 +45,87 @@
 
     <section class="genre-btns">
       <div>
-        <button id="action" data-genre="28" class="btn">Action</button>
+        <button id="action" data-genre="28" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Action</button>
       </div>
 
       <div>
-        <button id="adventure" data-genre="12" class="btn">Adventure</button>
+        <button id="adventure" data-genre="12" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Adventure</button>
       </div>
 
       <div>
-        <button id="animation" data-genre="16" class="btn">Animation</button>
+        <button id="animation" data-genre="16" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Animation</button>
       </div>
 
       <div>
-        <button id="biography" data-genre="1" class="btn">Biography</button>
+        <button id="biography " data-genre="1" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Biography</button>
       </div>
 
       <div>
-        <button id="comedy" data-genre="35" class="btn">Comedy</button>
+        <button id="comedy" data-genre="35" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Comedy</button>
       </div>
 
       <div>
-        <button id="crime" data-genre="80" class="btn">Crime</button>
+        <button id="crime" data-genre="80" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Crime</button>
       </div>
 
       <div>
-        <button id="documentary" data-genre="99" class="btn">Documentary</button>
+        <button id="documentary" data-genre="99" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Documentary</button>
       </div>
 
       <div>
-        <button id="drama" data-genre="18" class="btn">Drama</button>
+        <button id="drama" data-genre="18" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Drama</button>
       </div>
 
       <div>
-        <button id="family" data-genre="10751" class="btn">Family</button>
+        <button id="family" data-genre="10751" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Family</button>
       </div>
 
       <div>
-        <button id="fantasy" data-genre="14" class="btn">Fantasy</button>
+        <button id="fantasy" data-genre="14" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Fantasy</button>
       </div>
 
       <div>
-        <button id="history" data-genre="36" class="btn">History</button>
+        <button id="history" data-genre="36" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">History</button>
       </div>
 
       <div>
-        <button id="horror" data-genre="27" class="btn">Horror</button>
+        <button id="horror" data-genre="27" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Horror</button>
       </div>
 
       <div>
-        <button id="musical" data-genre="4" class="btn">Musical</button>
+        <button id="musical" data-genre="4" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Musical</button>
       </div>
 
       <div>
-        <button id="mystery" data-genre="9648" class="btn">Mystery</button>
+        <button id="mystery" data-genre="9648" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Mystery</button>
       </div>
 
       <div>
-        <button id="romance" data-genre="10749" class="btn">Romance</button>
+        <button id="romance" data-genre="10749" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Romance</button>
       </div>
 
       <div>
-        <button id="scifi" data-genre="878" class="btn">Science Fiction</button>
+        <button id="scifi" data-genre="878" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Science Fiction</button>
       </div>
 
       <div>
-        <button id="sports" data-genre="5" class="btn">Sports</button>
+        <button id="sports" data-genre="5" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Sports</button>
       </div>
 
       <div>
-        <button id="thriller" data-genre="53" class="btn">Thriller</button>
+        <button id="thriller" data-genre="53" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Thriller</button>
       </div>
 
       <div>
-        <button id="western" data-genre="37" class="btn">Western</button>
+        <button id="western" data-genre="37" class="btn text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center mr-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Western</button>
       </div>
     </section>
 
-    <div id="genre-results">
-      <!-- results go here -->
-    </div>
-
+    <section class="movie content-center">
+      <div id="genre-results" >
+        <!-- results go here -->
+      </div>
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="../assets/script.js"></script>

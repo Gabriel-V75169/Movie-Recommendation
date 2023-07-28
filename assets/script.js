@@ -142,7 +142,7 @@ function searchGenre(genre) {
 
       data.result.forEach((movie) => {
         const movieEl = document.createElement("div");
-        movieEl.classList.add("movie");
+        movieEl.classList.add("jstyling");
 
         const titleEl = document.createElement("h3");
         titleEl.textContent = movie.title;
