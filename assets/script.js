@@ -72,16 +72,16 @@ function displayRecommendations(recommendations) {
   movieContainer.classList.add("movie-container");
   
 
-  recommendations.forEach((movie) => {
+  // Filter out adult movies from recommendations
+  const filteredRecommendations = recommendations.filter((movie) => !movie.adult);
+
+  filteredRecommendations.forEach((movie) => {
     const movieCard = document.createElement("div");
     movieCard.classList.add("movie-card");
 
-    // Add the movie ID as a data attribute to the movie card
-    movieCard.setAttribute("data-movie-id", movie.id);
-
     // Add the movie ID and overview as data attributes to the movie card
     movieCard.setAttribute("data-movie-id", movie.id);
-    movieCard.setAttribute("data-movie-overview", movie.overview); // Add the overview directly from the movie object
+    movieCard.setAttribute("data-movie-overview", movie.overview);
 
     // Create an element for the movie title
     const movieTitle = document.createElement("h2");
@@ -106,6 +106,7 @@ function displayRecommendations(recommendations) {
 
   resultsContainer.append(movieContainer);
 }
+
 
 resultsContainer.on("click", ".movie-card", function () {
   // Get the movie object from the clicked movie card
