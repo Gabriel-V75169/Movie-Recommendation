@@ -78,6 +78,10 @@ function displayRecommendations(recommendations) {
     // Add the movie ID as a data attribute to the movie card
     movieCard.setAttribute("data-movie-id", movie.id);
 
+    // Add the movie ID and overview as data attributes to the movie card
+    movieCard.setAttribute("data-movie-id", movie.id);
+    movieCard.setAttribute("data-movie-overview", movie.overview); // Add the overview directly from the movie object
+
     // Create an element for the movie title
     const movieTitle = document.createElement("h2");
     movieTitle.textContent = movie.title;
@@ -102,14 +106,27 @@ function displayRecommendations(recommendations) {
   resultsContainer.append(movieContainer);
 }
 
-// Add an event listener for user click within the results container
 resultsContainer.on("click", ".movie-card", function () {
-  // Get the movie ID from the data attribute of the clicked movie card
+  // Get the movie object from the clicked movie card
   const movieId = $(this).data("movie-id");
-  
-  console.log("Selected Movie ID:", movieId);
-});
+  const movieTitle = $(this).find("h2").text();
+  const posterPath = $(this).find("img").attr("src");
+  const overview = $(this).data("movie-overview");
 
+  const movieData = {
+    id: movieId,
+    title: movieTitle,
+    posterPath: posterPath,
+    overview: overview,
+  };
+
+  // Set the movie data object to local storage
+  localStorage.setItem("selectedMovie", JSON.stringify(movieData));
+
+  // Perform any other actions you want with the movie data
+  console.log("Selected Movie Data:", movieData);
+  // You can use the movie data for further processing (e.g., to display details about the movie).
+});
 
 const genreApi = "a005c14e69msh0a4e62b61b8ee65p1f3f21jsn12df62b5ea9c";
 const actionBtn = $("#action");
