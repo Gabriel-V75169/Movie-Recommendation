@@ -72,7 +72,8 @@ function displayRecommendations(recommendations) {
   movieContainer.classList.add("movie-container");
 
   // Filter out adult movies from recommendations
-  const filteredRecommendations = recommendations.filter((movie) => !movie.adult);
+  const filteredRecommendations = recommendations.filter(
+    (movie) => movie.adult === false && movie.original_language === "en");
 
   filteredRecommendations.forEach((movie) => {
     const movieCard = document.createElement("div");
