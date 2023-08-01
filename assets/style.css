@@ -109,9 +109,45 @@
   border-right-width: 10px;
   border-color: #1a1a1a;
   flex-basis: 50%;
+  
 }
 
-.jstyling h3 {
+.gstyling img {  
+  max-width: 185px;  
+  height: 185px;  
+  } 
+  
+ .gstyling {
+  font-family: 'Crimson Text', serif;
+  color: var(--coolRed);
+  display: inline-block;
+  justify-content: space-between;
+  margin-top: 56px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: #1a1a1a;
+  flex-basis: 50%;
+    justify-content: center;
+    
+  }
+
+.poster-box {
+  display: inline;
+  margin-top: 56px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: #1a1a1a;
+  border-radius: 0.5rem;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-color: #1a1a1a;
+  flex-basis: 50%;
+}
+.jstyling, .gstyling h3 {
   border-bottom-color: #c21807;
   border-bottom-width: 4px;
   margin-bottom: 7px;
