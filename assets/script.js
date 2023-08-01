@@ -196,10 +196,10 @@ function searchGenre(genre) {
 
         // Event listener for selected movie
         movieEl.addEventListener("click", function () {
-
           const selectedMovie = {
             title: movie.title,
             posterURL: movie.posterURLs["185"],
+            overview: data.result[0].overview
           };
 
           // Storing the selected movie in local storage
