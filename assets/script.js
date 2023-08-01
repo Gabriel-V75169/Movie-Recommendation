@@ -123,10 +123,7 @@ resultsContainer.on("click", ".movie-card", function () {
 
   // Set the movie data object to local storage
   localStorage.setItem("selectedMovie", JSON.stringify(movieData));
-
-  // Perform any other actions you want with the movie data
   console.log("Selected Movie Data:", movieData);
-  // You can use the movie data for further processing (e.g., to display details about the movie).
 });
 
 const genreApi = "a005c14e69msh0a4e62b61b8ee65p1f3f21jsn12df62b5ea9c";
