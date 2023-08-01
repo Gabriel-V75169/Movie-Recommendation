@@ -40,7 +40,7 @@ function getMovieId(data) {
     console.log("No movies found.");
     return;
   }
-  //   selects the ID of the FIRST movie from the array of movies found by user input and
+  // selects the ID of the FIRST movie from the array of movies found by user input and
   const MovieId = data[0].id;
   console.log("Movie ID:", MovieId);
   // took me forever to get this to work because i was using & instead of ? before the api key, but "similar" is a feature of The Movie Database that shows similar movies based on movie id
@@ -75,6 +75,9 @@ function displayRecommendations(recommendations) {
     const movieCard = document.createElement("div");
     movieCard.classList.add("movie-card");
 
+    // Add the movie ID as a data attribute to the movie card
+    movieCard.setAttribute("data-movie-id", movie.id);
+
     // Create an element for the movie title
     const movieTitle = document.createElement("h2");
     movieTitle.textContent = movie.title;
@@ -98,6 +101,15 @@ function displayRecommendations(recommendations) {
 
   resultsContainer.append(movieContainer);
 }
+
+// Add an event listener for user click within the results container
+resultsContainer.on("click", ".movie-card", function () {
+  // Get the movie ID from the data attribute of the clicked movie card
+  const movieId = $(this).data("movie-id");
+  
+  console.log("Selected Movie ID:", movieId);
+});
+
 
 const genreApi = "a005c14e69msh0a4e62b61b8ee65p1f3f21jsn12df62b5ea9c";
 const actionBtn = $("#action");
