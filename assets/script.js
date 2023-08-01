@@ -13,6 +13,16 @@ searchButton.on("click", function () {
   searchMovie(searchURL);
 });
 
+// Event listener for the Enter key press
+searchInput.on("keydown", function (event) {
+  if (event.keyCode === 13) {
+    const movieTitle = searchInput.val();
+    const searchURL = `https://api.themoviedb.org/3/search/movie?query=${movieTitle}&api_key=${apiKey}`;
+
+    searchMovie(searchURL);
+  }
+});
+
 // function to fetch data
 function searchMovie(url) {
   fetch(url)
