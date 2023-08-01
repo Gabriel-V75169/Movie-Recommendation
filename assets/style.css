@@ -10,6 +10,8 @@
     flex-wrap: wrap; /* Allow wrapping of movie cards to the next row if needed */
     justify-content: center; /* Center the movie cards horizontally */
     gap: 20px; /* Adjust the gap between movie cards as needed */
+    background-color: #1a1a1a;
+    margin-top: 10px;
   }
   
 
@@ -213,6 +215,24 @@
   border-color: var(--coolRed);
   cursor: pointer;
   padding: 3px 5px 3px 5px;
+}
+
+.hBtn {
+   border-radius: 2px;
+  background-color: var(--darkColor)!important;
+  color: var(--coolRed) !important;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 10px;
+  margin-left: 300px;
+  border: 2px;
+  border-color: var(--coolRed);
+  cursor: pointer;
+  padding: 3px 5px 3px 5px;
+}
+
+input {
+  background-color: #1a1a1a;
 }
 
 section {

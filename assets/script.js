@@ -70,6 +70,7 @@ function displayRecommendations(recommendations) {
 
   const movieContainer = document.createElement("div");
   movieContainer.classList.add("movie-container");
+  
 
   recommendations.forEach((movie) => {
     const movieCard = document.createElement("div");

@@ -5,16 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Recommender</title>
   <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Movie Recommender</h1>
+<body class="intro-background">
+
+  <header class="header">
+    <a href="./index.html"><h1 class="movies text-[65px] text-center">Movie Recommender</h1></a>
+  </header>
+  <section class="searchTitles justify-center text-3xl text-center pb-3 mb-3 border-double rounded-md">
     <!-- Add a new input field for the user to enter a movie title -->
-    <label for="movieTitle">Enter a Movie Title to find similar movies:</label>
-    <input type="text" id="movieTitle" name="movieTitle" placeholder="Enter a movie title...">
+    <label for="movieTitle" class="movies ">Enter a Movie Title to find similar movies: </label> 
+  </section>
+    <input type="text" id="movieTitle" name="movieTitle" placeholder="Enter a movie title..." class="inline-block w-3/4 p-7 pl-10 text-sm  rounded-lg  dark:border-red-500 dark:text-red-500  dark:focus:ring-red-900 ">
 
-    <button type="submit">Find Movies</button>
-  </form>
+    <button type="submit" class="hBtn btn  text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-3xl px-5 py-2.5 text-center  dark:border-red-500 ml-3 mt-4 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">Find Movies</button>
 
+ 
   <!-- Display the results here -->
   <div id="results">
     <!-- The movie recommendations will be displayed here -->
