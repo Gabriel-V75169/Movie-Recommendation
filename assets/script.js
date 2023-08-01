@@ -151,7 +151,7 @@ function searchGenre(genre) {
       moviesContainer.innerHTML = "";
 
       data.result.forEach((movie) => {
-        const movieEl = document.createElement("div");
+        const movieEl = document.createElement("button");
         movieEl.classList.add("jstyling");
 
         const titleEl = document.createElement("h3");
@@ -165,6 +165,21 @@ function searchGenre(genre) {
         movieEl.appendChild(posterEl);
 
         moviesContainer.appendChild(movieEl);
+
+        // Event listener for selected movie
+        movieEl.addEventListener("click", function () {
+
+          const selectedMovie = {
+            title: movie.title,
+            posterURL: movie.posterURLs["185"],
+          };
+
+          // Storing the selected movie in local storage
+          localStorage.setItem("selectedMovie", JSON.stringify(selectedMovie));
+
+          // Console log for storage to identify it
+          console.log("Movie stored in local storage:", selectedMovie);
+        });
       });
     })
     .catch((error) => {
