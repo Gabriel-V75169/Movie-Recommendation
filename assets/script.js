@@ -181,7 +181,7 @@ function searchGenre(genre) {
 
       data.result.forEach((movie) => {
         const movieEl = document.createElement("button");
-        movieEl.classList.add("jstyling");
+        movieEl.classList.add("jstyling", "movie-card", );
 
         const titleEl = document.createElement("h3");
         titleEl.textContent = movie.title;
