@@ -94,6 +94,14 @@ Here are the following links to help us write the code:
 
 ### Peyton Mastropolo Files
 
+- [About Movie of the Night](https://www.movieofthenight.com/about/api)
+- [Subscription Page](https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability/pricing)
+- [Movie of the night details](https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability/details)
+- [Movie of the night Github](https://github.com/movieofthenight/streaming-availability-api)
+- [Streaming Availability](https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability/)
+- [TMDB](https://www.themoviedb.org/?language=en-US)
+- [Getting Started TMDB](https://developer.themoviedb.org/docs)
+
 
 ## License
 
