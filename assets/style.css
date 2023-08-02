@@ -10,6 +10,8 @@
     flex-wrap: wrap; /* Allow wrapping of movie cards to the next row if needed */
     justify-content: center; /* Center the movie cards horizontally */
     gap: 20px; /* Adjust the gap between movie cards as needed */
+    
+    margin-top: 10px;
   }
   
 
@@ -17,8 +19,11 @@
 .movie-card {
     width: 300px; /* Adjust this width as needed */
     margin: 10px;
-    background-color: #f1f1f1;
+    background-color: #1a1a1a;
     border-radius: 5px;
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-color: #1a1a1a;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center; /* Center the title horizontally */
@@ -42,9 +47,10 @@
     margin: 0;
     padding: 10px;
     font-size: 16px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    ;
+    border-bottom: 1px solid #c21807;
     border-radius: 5px 5px 0 0;
+    color: #c21807;
   }
 
 
@@ -60,7 +66,7 @@
 .movie-card {
     width: 300px; /* Adjust this width as needed */
     margin: 10px;
-    background-color: #f1f1f1;
+    
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -82,12 +88,13 @@
   
   /* CSS for the movie title inside the movie card */
   .movie-card h2 {
-    margin: 0;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     font-size: 16px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #c21807;
     border-radius: 5px 5px 0 0;
+    color: #c21807;
   }
 
 .movies {
@@ -96,19 +103,22 @@
 }
 
 .jstyling {
-  font-family: 'Crimson Text', serif;
-    color: var(--coolRed);
-  display: inline-block;
+   font-family: 'Crimson Text', serif;
+  color: var(--coolRed);
+  display: inline-block;  
   justify-content: space-between;
   margin-top: 56px;
   margin-left: 10px;
   text-align: center;
   background-color: #1a1a1a;
   border-radius: 0.5rem;
-  border-left-width: 10px;
-  border-right-width: 10px;
+  border-left-width: 20px;
+  border-right-width: 20px;
+  border-bottom-width: 15px;
   border-color: #1a1a1a;
   flex-basis: 50%;
+  justify-content: center;
+  inline-size: 170px;
   
 }
 
@@ -120,19 +130,21 @@
  .gstyling {
   font-family: 'Crimson Text', serif;
   color: var(--coolRed);
-  display: inline-block;
+  display: flex;  
   justify-content: space-between;
   margin-top: 56px;
   margin-left: 10px;
   text-align: center;
   background-color: #1a1a1a;
   border-radius: 0.5rem;
-  border-left-width: 10px;
-  border-right-width: 10px;
+  border-left-width: 20px;
+  border-right-width: 20px;
+  border-bottom-width: 15px;
   border-color: #1a1a1a;
   flex-basis: 50%;
-    justify-content: center;
-    
+  justify-content: center;
+  inline-size: 170px;
+  float: right;
   }
 
 .poster-box {
@@ -213,6 +225,24 @@
   border-color: var(--coolRed);
   cursor: pointer;
   padding: 3px 5px 3px 5px;
+}
+
+.hBtn {
+   border-radius: 2px;
+  background-color: var(--darkColor)!important;
+  color: var(--coolRed) !important;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 10px;
+  margin-left: 300px;
+  border: 2px;
+  border-color: var(--coolRed);
+  cursor: pointer;
+  padding: 3px 5px 3px 5px;
+}
+
+input {
+  background-color: #1a1a1a;
 }
 
 section {

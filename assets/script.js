@@ -70,12 +70,11 @@ function displayRecommendations(recommendations) {
 
   const movieContainer = document.createElement("div");
   movieContainer.classList.add("movie-container");
+  
 
   // Filter out adult movies from recommendations
-
   const filteredRecommendations = recommendations.filter(
     (movie) => movie.adult === false && movie.original_language === "en");
-
 
   filteredRecommendations.forEach((movie) => {
     const movieCard = document.createElement("div");
@@ -182,7 +181,7 @@ function searchGenre(genre) {
 
       data.result.forEach((movie) => {
         const movieEl = document.createElement("button");
-        movieEl.classList.add("jstyling");
+        movieEl.classList.add("jstyling", "movie-card", );
 
         const titleEl = document.createElement("h3");
         titleEl.textContent = movie.title;

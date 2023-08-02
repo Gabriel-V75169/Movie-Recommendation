@@ -23,12 +23,12 @@ function showMovies(data) {
     data.forEach(movie => {
         const {title, poster_path,} = movie;
         const movieEl = document.createElement('div');
-        movieEl.classList.add('gstyling');
+        movieEl.classList.add('gstyling', 'break-all');
         movieEl.classList.add('Poster-box');
-        movieEl.classList.add('trendingFlex')
+        movieEl.classList.add('absoulute', 'right-30')
         
         movieEl.innerHTML = `
-        <section>
+        <section class="trendingFlex">
              
             <div class="movie-info">
                 <h3>${title}</h3>
