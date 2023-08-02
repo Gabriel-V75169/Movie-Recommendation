@@ -126,6 +126,8 @@ resultsContainer.on("click", ".movie-card", function () {
   // Set the movie data object to local storage
   localStorage.setItem("selectedMovie", JSON.stringify(movieData));
   console.log("Selected Movie Data:", movieData);
+
+  window.location.href = "pindex.html";
 });
 
 const genreApi = "a005c14e69msh0a4e62b61b8ee65p1f3f21jsn12df62b5ea9c";
@@ -205,6 +207,8 @@ function searchGenre(genre) {
 
           // Storing the selected movie in local storage
           localStorage.setItem("selectedMovie", JSON.stringify(selectedMovie));
+
+          window.location.href = "../pindex.html";
 
           // Console log for storage to identify it
           console.log("Movie stored in local storage:", selectedMovie);
