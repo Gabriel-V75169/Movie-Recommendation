@@ -98,19 +98,22 @@
 }
 
 .jstyling {
-  font-family: 'Crimson Text', serif;
-    color: var(--coolRed);
-  display: inline-block;
+   font-family: 'Crimson Text', serif;
+  color: var(--coolRed);
+  display: inline-block;  
   justify-content: space-between;
   margin-top: 56px;
   margin-left: 10px;
   text-align: center;
   background-color: #1a1a1a;
   border-radius: 0.5rem;
-  border-left-width: 10px;
-  border-right-width: 10px;
+  border-left-width: 20px;
+  border-right-width: 20px;
+  border-bottom-width: 15px;
   border-color: #1a1a1a;
   flex-basis: 50%;
+  justify-content: center;
+  inline-size: 170px;
   
 }
 
@@ -122,19 +125,21 @@
  .gstyling {
   font-family: 'Crimson Text', serif;
   color: var(--coolRed);
-  display: inline-block;
+  display: flex;  
   justify-content: space-between;
   margin-top: 56px;
   margin-left: 10px;
   text-align: center;
   background-color: #1a1a1a;
   border-radius: 0.5rem;
-  border-left-width: 10px;
-  border-right-width: 10px;
+  border-left-width: 20px;
+  border-right-width: 20px;
+  border-bottom-width: 15px;
   border-color: #1a1a1a;
   flex-basis: 50%;
-    justify-content: center;
-    
+  justify-content: center;
+  inline-size: 170px;
+  float: right;
   }
 
 .poster-box {
