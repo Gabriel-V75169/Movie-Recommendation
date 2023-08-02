@@ -101,6 +101,19 @@ Here are the following links to help us write the code:
 - [Streaming Availability](https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability/)
 - [TMDB](https://www.themoviedb.org/?language=en-US)
 - [Getting Started TMDB](https://developer.themoviedb.org/docs)
+  
+Images:
+![Movie of the Night Part One](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/cdce6001-0739-4a79-b81c-7dba1c607e76)
+![Movie of the Night Part 2](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/56daa0df-cb4c-4b0c-975a-2af64a800928)
+![Movie of the Night Part 3](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/eb1543ab-ca2a-4a03-ae53-07eba2e0f235)
+![Movie of the Night Rapid Web Part 1](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/0499c94f-9459-4301-a4c5-b913eca18caf)
+![Movie of the night Rapid web part 2](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/b7caf59f-8bf5-4041-a05f-dc64c289f15b)
+![Movie of the night Rapid Web part 3](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/98b69c69-154d-4ea9-bd12-260bc4444b26)
+
+
+
+
+
 
 
 ## License
