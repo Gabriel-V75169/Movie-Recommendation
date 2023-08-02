@@ -4,8 +4,9 @@
 
 :page_with_curl:
 
-- User Story
-- Description
+*Main questions for project we need to answer*
+- User Story?
+- Description?
 - Motivation for development?
 
 ## Table of Contents
@@ -22,6 +23,7 @@
 - [Key-Topics](#key-topics)
 - [MISC](#misc)
 - [Bonus Content](#bonus-content)
+- [Peyton Mastropolo Files](#peyton-mastropolo-files)
 - [License](#license)
 - [How to Contribute](#how-to-contribute)
 - [Badges](#badges)
@@ -38,6 +40,7 @@
 
 ## Process
 
+*Need to answer process questions*
 - Technologies used
 - Breakdown of tasks and roles
 - Challenges
@@ -60,6 +63,8 @@
 :name_badge:
 
 Here are the following links to help us write the code:
+
+*Need to insert Everything We Worked On*
 
 ### School Links We Were Provided With
 
@@ -86,6 +91,30 @@ Here are the following links to help us write the code:
 :floppy_disk:
 
 - [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial/getting_started)
+
+### Peyton Mastropolo Files
+
+- [About Movie of the Night](https://www.movieofthenight.com/about/api)
+- [Subscription Page](https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability/pricing)
+- [Movie of the night details](https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability/details)
+- [Movie of the night Github](https://github.com/movieofthenight/streaming-availability-api)
+- [Streaming Availability](https://rapidapi.com/movie-of-the-night-movie-of-the-night-default/api/streaming-availability/)
+- [TMDB](https://www.themoviedb.org/?language=en-US)
+- [Getting Started TMDB](https://developer.themoviedb.org/docs)
+  
+Images:
+![Movie of the Night Part One](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/cdce6001-0739-4a79-b81c-7dba1c607e76)
+![Movie of the Night Part 2](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/56daa0df-cb4c-4b0c-975a-2af64a800928)
+![Movie of the Night Part 3](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/eb1543ab-ca2a-4a03-ae53-07eba2e0f235)
+![Movie of the Night Rapid Web Part 1](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/0499c94f-9459-4301-a4c5-b913eca18caf)
+![Movie of the night Rapid web part 2](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/b7caf59f-8bf5-4041-a05f-dc64c289f15b)
+![Movie of the night Rapid Web part 3](https://github.com/Gabriel-V75169/Movie-Recommendation/assets/135174286/98b69c69-154d-4ea9-bd12-260bc4444b26)
+
+
+
+
+
+
 
 ## License
 
