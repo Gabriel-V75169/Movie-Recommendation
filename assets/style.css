@@ -227,6 +227,19 @@
   padding: 3px 5px 3px 5px;
 }
 
+.oBtn {
+  border-radius: 2px;
+  background-color: var(--darkColor);
+  color: var(--coolRed);
+  font-weight: bold;
+  font-size: 25px;
+  margin: 10px;
+  margin-left: 30px;
+  border: 2px;
+  border-color: var(--coolRed);
+  cursor: pointer;
+  padding: 3px 5px 3px 5px;
+}
 .hBtn {
    border-radius: 2px;
   background-color: var(--darkColor)!important;
