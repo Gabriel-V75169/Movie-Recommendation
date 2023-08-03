@@ -123,7 +123,7 @@ resultsContainer.on("click", ".movie-card", function () {
   const movieData = {
     id: movieId,
     title: movieTitle,
-    posterPath: posterPath,
+    posterURL: posterPath,
     overview: overview,
   };
 
