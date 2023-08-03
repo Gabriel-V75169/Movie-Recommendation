@@ -36,7 +36,7 @@
 
 :arrow_forward:Github Link: https://github.com/Gabriel-V75169/Movie-Recommendation/tree/main 
 
-:arrow_forward:Portfolio Website Link:
+:arrow_forward:Portfolio Website Link: https://gabriel-v75169.github.io/Movie-Recommendation/
 
 ## Process
 
@@ -56,7 +56,7 @@
 
 :arrow_forward:Github link: https://github.com/Gabriel-V75169/Movie-Recommendation/tree/main 
 
-:arrow_forward:Portfolio Website Link:
+:arrow_forward:Portfolio Website Link: https://gabriel-v75169.github.io/Movie-Recommendation/
 
 ## Credits
 
