@@ -38,6 +38,7 @@ function searchMovie(url) {
 function getMovieId(data) {
   if (data.length === 0) {
     console.log("No movies found.");
+    alert("No movies found, try another movie.");
     return;
   }
   // selects the ID of the FIRST movie from the array of movies found by user input and
