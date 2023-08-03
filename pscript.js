@@ -73,7 +73,7 @@ if (movie) {
   const posterContainer = document.createElement("div");    // CREATED DIV ELEMENT TO STORE POSTER IN POSTERCONATINER VARIABLE
   posterContainer.classList.add("poster-container");        //  CSS CLASS
   const poster = document.createElement("img");             // HAD TO CREATE NEW IMAGE STORED INVARIABLE POSTER 
-  poster.src = "https://image.tmdb.org/t/p/w500" + movie.posterPath;
+  poster.src = "https://image.tmdb.org/t/p/w500" + movie.posterURL;    // CHANGED POSTERPATH TO POSTER URL
  
   posterContainer.appendChild(poster);        // APPEND POSTER IMAGE TO POSTERCONTAIN DIV 
   movieCard.appendChild(posterContainer);   // WANTED TO MAKE TERRIBLE APPENDIX JOKE BUT NOTHING COMES TO MIND, losing it slowly ... 
