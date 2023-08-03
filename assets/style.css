@@ -257,3 +257,19 @@ section {
   font-size: 30px;
   color: var(--coolRed);
 }
+
+.overviewcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--coolRed);
+}
+
+body {
+  background-color: var(--lightColor);
+}
+
+.movie-pointer {
+  cursor: pointer;
+}

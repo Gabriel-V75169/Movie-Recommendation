@@ -68,6 +68,8 @@ function fetchRecommendations(url) {
 function displayRecommendations(recommendations) {
   resultsContainer.empty();
 
+
+
   const movieContainer = document.createElement("div");
   movieContainer.classList.add("movie-container");
   
@@ -79,6 +81,7 @@ function displayRecommendations(recommendations) {
   filteredRecommendations.forEach((movie) => {
     const movieCard = document.createElement("div");
     movieCard.classList.add("movie-card");
+    movieCard.classList.add("movie-pointer");
 
     // Add the movie ID and overview as data attributes to the movie card
     movieCard.setAttribute("data-movie-id", movie.id);
@@ -103,6 +106,7 @@ function displayRecommendations(recommendations) {
 
     resultsContainer.append(movieCard);
     movieContainer.appendChild(movieCard);
+
   });
 
   resultsContainer.append(movieContainer);
